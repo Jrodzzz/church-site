@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #011627;
+    color: #fff;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15%;
+    background: transparent;
+    transition: all .50s ease;
+}
+.logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    margin: 0px 5px;
+    padding: 5px 10px;
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .50s ease;
+    white-space: nowrap;
+}
+.navlist a:hover{
+    color: #fff;
+}
+.navlist a:after{
+    content:"";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0)
+}
+.navlist a:hover:after{
+    transform: scaleX(1)
+}
+.btn  {
+    margin: 0px 5px;
+    padding: 5px 10px;
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .50s ease;
+    white-space: nowrap;
+    
+}
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    background: #00c9e0
+}
+.btn :hover{
+    
+    border: 2px solid #00c9e0;
+    background: transparent;
+}
+#menu-icon{
+    color: #fff;
+    font-size: 38px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 0 15%;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: Linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/0110/3911/3312/files/plant-hero-2.jpg?v=1564008913)
+    
+}
+@media (max-width: 1350px){
+    nav{
+        padding: 20px 5%;
+    }
+    section{
+        padding: 0px 5%
+    }
+}
+
+@media (max-width: 860px){
+    .menu-icon{
+        display: block;
+    }
+
+    }
