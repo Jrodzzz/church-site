@@ -1,0 +1,4 @@
+h1, p, h3, input, button, form {text-align: center; color: gainsboro;}
+h2, a {font-style: italic;text-align: center; color: gainsboro;}
+.menu {background-color:ivory; width: 65%; margin-left: auto; margin-right: auto;}
+body {background-image: url(https://cdn.shopify.com/s/files/1/0110/3911/3312/files/plant-hero-2.jpg?v=1564008913) /*background-color: rgb(236, 236, 223);*/}
