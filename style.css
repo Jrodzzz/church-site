@@ -73,11 +73,11 @@ nav{
     display: inline-block;
     padding: 12px 30px;
     color: #fff;
-    background: #00c9e0
+    background: #d3d4d4;
 }
 .btn :hover{
     
-    border: 2px solid #00c9e0;
+    border: 2px solid #f9faf9;
     background: transparent;
 }
 #menu-icon{
@@ -93,13 +93,24 @@ section{
 .hero{
     height: 100vh;
     width: 100%;
+    background-image: Linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/0110/3911/3312/files/plant-hero-2.jpg?v=1564008913);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: Linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/0110/3911/3312/files/plant-hero-2.jpg?v=1564008913)
-    
 }
+.main-text h1{
+    font-size: 90px;
+    font-weight: 800;
+    mask-border: 5px;
+}
+.main-text p{
+    font-size: 30px;
+    font-weight:600;
+}
+
 @media (max-width: 1350px){
     nav{
         padding: 20px 5%;
@@ -109,9 +120,54 @@ section{
     }
 }
 
+@media (max-width: 950px){
+    .main-text h1{
+        font-size: 70px;
+    }
+    .main-text p{
+        font-size: 22px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .btn{
+        padding: 9px 27px;
+    }
+}
+    
 @media (max-width: 860px){
-    .menu-icon{
+    #menu-icon{
         display: block;
     }
-
+    .navlist{
+        position:absolute;
+        top: -800px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #d3d4d4;
+        transition: all .50s ease;
+        text-align: left;
     }
+    .navlist a{
+        color: #fff;
+        padding: 1rem;
+        border-left: 2px solid #fff;
+        margin: 1rem;
+        display: block;
+    }
+    .navlist a:hover{
+        background: transparent;
+        color: #9d9d9d;
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+
+@media (max-width: 750px){
+    .main-text h1{
+        font-size: 50px;
+    }
+}
