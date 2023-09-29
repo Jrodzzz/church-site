@@ -7,7 +7,10 @@
     list-style: none;
 }
 body{
-    background: #011627;
+    background-image: url(https://cdn.shopify.com/s/files/1/0110/3911/3312/files/plant-hero-2.jpg?v=1564008913) scroll no-repeat center/cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
     color: #fff;
 }
 nav{
@@ -95,7 +98,9 @@ section{
     width: 100%;
     background-image: Linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/0110/3911/3312/files/plant-hero-2.jpg?v=1564008913);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,4 +175,39 @@ section{
     .main-text h1{
         font-size: 50px;
     }
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+}
+img {
+    max-width:680px;
+    float: left;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.text-box {
+    color: #fff;
+    float: right;
+}
+
+.text-box h2 {
+    font-size: 35px;
+    float: right;
+}
+
+.text-box h3 {
+    font-size: 22;
+    float: right;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
 }
